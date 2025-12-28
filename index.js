@@ -17,7 +17,7 @@ const storage = new Storage(); // Uses Cloud Run default service account
 app.get("/", (_req, res) => {
   res.status(200).json({
     status: "ok",
-    service: "AARAA Cloud Run Backend",
+    service: "AARAA Cloud Run Backend – CI/CD OK",
     timestamp: new Date().toISOString()
   });
 });
@@ -102,3 +102,4 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`AARAA backend running on port ${PORT}`);
 });
+
